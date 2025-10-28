@@ -40,9 +40,7 @@ Another huge advantage – learning to use Docker will make you a better enginee
 2. [Create a Dockerhub account](https://hub.docker.com/signup) and verify your email.
 3. Go to your terminal and run the command `docker login`.
 3. [Fork this repo](https://github.com/byuibigdata/docker_guide_streamlit) with the clone your forked version to your desktop.
-4. Within the cloned repository, Open a terminal and switch the working directory to one of the two `docker-` directories. 
-  - For example, using `cd docker-streamlit` will get you into the correct folder for streamlit.
-  - The [jupyter/all-spark-notebook](https://hub.docker.com/r/jupyter/all-spark-notebook) could be used by using `cd docker-spark`.
+4. Within the cloned repository, Open a terminal and switch the working directory to one of the two `docker-` directories. For example, using `cd docker-streamlit` will get you into the correct folder for streamlit. The [jupyter/all-spark-notebook](https://hub.docker.com/r/jupyter/all-spark-notebook) could be used by using `cd docker-spark`.
 5. Within the respective `docker-` folder in your terminal you can now run `docker compose up` to take advantage of the `docker-compose.yaml` file within the directory.
 
 - _Note 1: the command line versions require that the full local volume path is specified. We will be able to use relative file paths with the yaml._
