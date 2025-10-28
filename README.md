@@ -45,7 +45,21 @@ Another huge advantage – learning to use Docker will make you a better enginee
   - The [jupyter/all-spark-notebook](https://hub.docker.com/r/jupyter/all-spark-notebook) could be used by using `cd docker-spark`.
 5. Within the respective `docker-` folder in your terminal you can now run `docker compose up` to take advantage of the `docker-compose.yaml` file within the directory.
 
-_Note that the command line versions require that the full local volume path is specified. We will be able to use relative file paths with the yaml._
+- _Note 1: the command line versions require that the full local volume path is specified. We will be able to use relative file paths with the yaml._
+
+- _Note 2: There are a few other `docker-` based folders for additional examples of building a container._
+
+## Streamlit App
+
+After opening a terminal in the directory `~/docker-streamlit` and running `docker compose up` you should see action in the containers section of Docker and your terminal. 
+
+Now you can open your streamlit app at [http://localhost:8501](http://localhost:8501)
+
+### Developing your App
+
+Microsoft's Visual Studio code provides guidance on [developing inside a Container using Visual Studio Code Remote [Development](https://code.visualstudio.com/docs/devcontainers/containers). Let's use their [get started with development Containers in Visual Studio Code](https://code.visualstudio.com/docs/devcontainers/tutorial) tutorial.
+
+Now we can have a VS Code window running on the OS environment within the container. 
 
 ## Spark-Notebook
 
@@ -107,19 +121,6 @@ Docker Hub has an [adminer image](https://hub.docker.com/_/adminer) that we can 
 - Database: _lego_
 
 The [Postgres sample databases](https://github.com/neondatabase-labs/postgres-sample-dbs/tree/main?tab=readme-ov-file) has some Postgres databases that you could use.  We will use the [Lego example](https://github.com/neondatabase-labs/postgres-sample-dbs/tree/main?tab=readme-ov-file#lego-database). The `lego.sql` file is already in the `scratch` folder.
-
-
-## Streamlit App
-
-After opening a terminal in the directory `~/docker-streamlit` and running `docker compose up` you should see action in the containers section of Docker and your terminal. 
-
-Now you can open your streamlit app at [http://localhost:8501](http://localhost:8501)
-
-### Developing your App
-
-Microsft's Visual Studio code provides guidance on [developing inside a Container using Visual Studio Code Remote [Development](https://code.visualstudio.com/docs/devcontainers/containers). Let's use their [get started with development Containers in Visual Studio Code](https://code.visualstudio.com/docs/devcontainers/tutorial) tutorial.
-
-Now we can have a VS Code window running on the OS environment within the container. 
 
 ## References
 
